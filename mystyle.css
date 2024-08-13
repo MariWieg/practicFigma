@@ -1,0 +1,53 @@
+.blue{
+    background-image: url(blue\ header.jpg);
+    width: 1600px;
+    height: 848px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+      
+}
+.Header1{
+    color: white;
+    font-size: 44px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.imgHeader{
+    width: 50%;
+    margin-top: 77px;
+    margin-left: 427px;
+
+}
+.text1{
+    font-size: 24px;
+    color: white;
+    
+
+}
+ul{
+    list-style-type: none;
+    margin-left: 350px;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: inline-start;
+       
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+.textconteiter{
+    width: 900px;
+    margin-top: 80px;
+    margin-left: 427px;
+
+}
+
