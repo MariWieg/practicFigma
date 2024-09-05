@@ -1,0 +1,144 @@
+@import url(./normalize.css);
+@import url(../assets/fonts/muli.css);
+.blue {
+
+    &__body {
+        background-image: url(/assets/images/blue_header.jpg);
+        background-size: 1642px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        margin: 0 auto;
+        width: 1146px;
+
+    }
+
+    &__container {
+        margin: 70px auto;
+        width: 754px;
+    }
+
+    &__container-img {
+        position: relative;
+        margin: 80px 470px;
+        display: flex;
+        width: 1310px;
+        height: 640px;
+    }
+}
+.logo {
+    display: flex;
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    width: 53px;
+    height: 32px;
+}
+.header {
+
+    &__list {
+        display: flex;
+        gap: 63px;
+        
+    }
+
+    &__item {
+        margin: 0;
+        list-style: none;
+        
+    }
+
+    &__link {
+        display: block;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+   
+}
+
+.hireUs{
+    margin-left: 135px;
+    color: white;
+    border-bottom-style: solid;
+    border-color: #FCC304;
+}
+
+.container {
+
+    &__title {
+        font-size: 64px;
+        color: white;
+        
+    }
+
+    &__subtitle {
+        margin: 20px auto;
+        font-size: 24px;
+        color: white;
+    }
+
+    &__button {
+        
+    }
+}
+.container-img {
+    
+    &__scroll {
+        position: absolute;
+        margin-top: 280px;
+        margin-left: -85px;
+        
+    }
+
+    &__img {
+       
+    }
+
+    &__social {
+        writing-mode: vertical-lr;
+        font-size: 19px;
+        width: 19px;
+        height: 416px;
+        word-spacing: 90px;
+        margin-top: 112px;
+        margin-left: 64px;
+        
+    }
+}
+.imgHeader {
+    width: 1146px;
+    height: 640px;
+    
+    gap: 0px;
+    opacity: 0px;
+}
+
+.button {
+    border-radius: 64px;
+    border: none;
+    font-size: 16px;
+    width: 226px;
+    height: 56px;
+}
+
+.scrollButton{
+    width: 162.64px;
+    height: 64px;
+    background-color: #FCC304;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    word-spacing: 90px;
+    font-size: 24px;
+
+}

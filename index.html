@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <div class="blue">
-            <div class="header" >
-                <div class="container">
+            <div class="blue__body" >
+                <div class="blue__nav">
                     <a class="logo" href="https://www.google.com"/>DIA</a>
                     <ul class="header__list">
                         <li class="header__item"><a href="#home" class="header__link">Home</a></li>
@@ -18,23 +18,26 @@
                         <li class="header__item"><a href="#services" class="header__link">Services</a></li>
                         <li class="header__item"><a href="#work" class="header__link">Work</a></li>
                         <li class="header__item"><a href="#contactUs" class="header__link">Contact us</a></li>
-                        <li class="header__item"><a href="#hiretUs" class="header__link">Hire us</a></li>
+                        <!--<li class="header__item"><a href="#hireUs" class="header__link">Hire us</a></li>-->
                     </ul>
+                    <p class="hireUs">Hire us</p>
                 </div>
-            </div>
-            <div class="container container_m">
-                <div class="text-contaiter">
-                    <h1 class="Header1">Global digital agency</h1>
-                    <p class="text1">By the same illusion which lifts the horizon of <br> the sea to the level of the spectator on a hillside, the sable cloud beneath.</p>
-                    <button>Learn more</button>
+                <div class="blue__container container">
+                    <div class="container__title">Global digital agency</div>
+                    <div class="container__subtitle">By the same illusion which lifts the horizon of <br> the sea to the level of the spectator on a hillside, the sable cloud beneath.</div>
+                    <div class="container__button"><button class="button">Learn more</button></div>
                 </div>
-            </div>
-            <div class="a" style="height: 500px;">    
-                <img src="/assets/images/first_img.jpg" class="imgHeader">
+                <div class="blue__container-img container-img">
+                    <div class="container-img__scroll"><button class="scrollButton">< ></button></div>
+                    <div class="container-img__img">
+                        <img src="/assets/images/first_img.jpg" class="imgHeader">
+                    </div>
+                    <div class="container-img__social">Facebook Twitter Instagram</div>
+                </div>
             </div>
         </div>
     </header>
-    
+   
     
 </body>
 </html>
