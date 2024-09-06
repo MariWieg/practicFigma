@@ -1,13 +1,17 @@
-@import url(./normalize.css);
 @import url(../assets/fonts/muli.css);
-.blue__body {
+body {
+  font-family: "muli", Helvetica, sans-serif;
+  width: 1642px;
+  margin: 0 auto;
+}
+
+.header {
   background-image: url(/assets/images/blue_header.jpg);
-  background-size: 1642px;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center top;
 }
-.blue__nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,11 +27,11 @@
   margin: 0 auto;
   width: 1146px;
 }
-.blue__container {
+.header__container {
   margin: 70px auto;
   width: 754px;
 }
-.blue__container-img {
+.header__container-img {
   position: relative;
   margin: 80px 470px;
   display: -webkit-box;

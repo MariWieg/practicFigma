@@ -1,15 +1,17 @@
-@import url(./normalize.css);
 @import url(../assets/fonts/muli.css);
-.blue {
 
-    &__body {
-        background-image: url(/assets/images/blue_header.jpg);
-        background-size: 1642px;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center top;
-    }
+body {
+    font-family: "muli", Helvetica, sans-serif;
+    width: 1642px;
+    margin: 0 auto;
+}
 
+.header {
+    background-image: url(/assets/images/blue_header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  
     &__nav {
         display: flex;
         flex-direction: row;
