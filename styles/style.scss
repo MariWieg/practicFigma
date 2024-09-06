@@ -14,17 +14,11 @@ body {
   
     &__nav {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        margin: 0 auto;
-        width: 1146px;
-
+        align-items: center;
     }
 
     &__container {
-        margin: 70px auto;
-        width: 754px;
+        margin: 70px 98px 80px;
     }
 
     &__container-img {
@@ -34,27 +28,15 @@ body {
         width: 1310px;
         height: 640px;
     }
-}
-.logo {
-    display: flex;
-    text-decoration: none;
-    font-size: 32px;
-    color: white;
-    width: 53px;
-    height: 32px;
-}
-.header {
 
     &__list {
         display: flex;
-        gap: 63px;
-        
+        gap: 63px;  
     }
 
     &__item {
         margin: 0;
-        list-style: none;
-        
+        list-style: none;  
     }
 
     &__link {
@@ -65,7 +47,39 @@ body {
         padding: 14px 16px;
         text-decoration: none;
     }
-   
+
+    &__title {
+        font-size: 64px;
+        color: white;   
+    }
+
+    &__subtitle {
+        max-width: 754px;
+        font-size: 24px;
+        color: white;
+    }
+
+    &__social {
+        position: absolute;
+        top: 0;
+        right: 0;
+        writing-mode: vertical-lr;
+        font-size: 13px;
+        word-spacing: 90px;   
+    }
+
+    &__button {
+        
+    }
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    width: 53px;
+    height: 32px;
 }
 
 .hireUs{
@@ -75,54 +89,21 @@ body {
     border-color: #FCC304;
 }
 
-.container {
-
-    &__title {
-        font-size: 64px;
-        color: white;
-        
-    }
-
-    &__subtitle {
-        margin: 20px auto;
-        font-size: 24px;
-        color: white;
-    }
-
-    &__button {
-        
-    }
-}
-.container-img {
-    
+.slider {
     &__scroll {
         position: absolute;
         margin-top: 280px;
-        margin-left: -85px;
-        
+        margin-left: -85px;  
     }
 
-    &__img {
+    &__wrapper {
        
     }
 
-    &__social {
-        writing-mode: vertical-lr;
-        font-size: 19px;
-        width: 19px;
-        height: 416px;
-        word-spacing: 90px;
-        margin-top: 112px;
-        margin-left: 64px;
-        
+    &__img-inner {
+        width: 1146px;
+        height: 640px;
     }
-}
-.imgHeader {
-    width: 1146px;
-    height: 640px;
-    
-    gap: 0px;
-    opacity: 0px;
 }
 
 .button {
@@ -142,5 +123,10 @@ body {
     border: none;
     word-spacing: 90px;
     font-size: 24px;
+}
 
+.container {
+    position: relative;
+    width: 1146px;
+    margin: 0 auto;
 }

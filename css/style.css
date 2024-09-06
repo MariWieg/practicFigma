@@ -15,21 +15,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin: 0 auto;
-  width: 1146px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__container {
-  margin: 70px auto;
-  width: 754px;
+  margin: 70px 98px 80px;
 }
 .header__container-img {
   position: relative;
@@ -40,18 +31,6 @@ body {
   width: 1310px;
   height: 640px;
 }
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  font-size: 32px;
-  color: white;
-  width: 53px;
-  height: 32px;
-}
-
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,6 +49,35 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
+.header__title {
+  font-size: 64px;
+  color: white;
+}
+.header__subtitle {
+  max-width: 754px;
+  font-size: 24px;
+  color: white;
+}
+.header__social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-size: 13px;
+  word-spacing: 90px;
+}
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-size: 32px;
+  color: white;
+  width: 53px;
+  height: 32px;
+}
 
 .hireUs {
   margin-left: 135px;
@@ -78,37 +86,14 @@ body {
   border-color: #FCC304;
 }
 
-.container__title {
-  font-size: 64px;
-  color: white;
-}
-.container__subtitle {
-  margin: 20px auto;
-  font-size: 24px;
-  color: white;
-}
-.container-img__scroll {
+.slider__scroll {
   position: absolute;
   margin-top: 280px;
   margin-left: -85px;
 }
-.container-img__social {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  font-size: 19px;
-  width: 19px;
-  height: 416px;
-  word-spacing: 90px;
-  margin-top: 112px;
-  margin-left: 64px;
-}
-
-.imgHeader {
+.slider__img-inner {
   width: 1146px;
   height: 640px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .button {
@@ -128,4 +113,10 @@ body {
   border: none;
   word-spacing: 90px;
   font-size: 24px;
+}
+
+.container {
+  position: relative;
+  width: 1146px;
+  margin: 0 auto;
 }
