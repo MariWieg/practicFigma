@@ -41,7 +41,7 @@ body {
 
     &__link {
         display: block;
-        color: rgb(255, 255, 255);
+        color: white;
         font-size: 16px;
         text-align: center;
         padding: 14px 16px;
@@ -65,11 +65,16 @@ body {
         right: 0;
         writing-mode: vertical-lr;
         font-size: 13px;
-        word-spacing: 90px;   
+        margin-top: 580px;
+        margin-right: -120px;
+           
+        list-style-type: none;
+        
     }
 
-    &__button {
-        
+    &__social-item {
+        float: left;
+        padding: 65px;  
     }
 }
 
@@ -82,47 +87,78 @@ body {
     height: 32px;
 }
 
-.hireUs{
+.hire-us{
     margin-left: 135px;
     color: white;
     border-bottom-style: solid;
     border-color: #FCC304;
+    text-decoration: none;
 }
 
 .slider {
-    &__scroll {
+    position: relative;
+
+    &__buttons {
         position: absolute;
-        margin-top: 280px;
-        margin-left: -85px;  
+        margin-top: 260px;
+        margin-left: -80px;
+    }
+
+    &__button {
+        width: 80px;
+        height: 64px;
+        background-color: #FCC304;
+        color: white;
+        border: none;
+        float: left;
+    }
+
+    &__button_prev {
+        border-right: none;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    &__button_next {
+        border-right: none;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
 
     &__wrapper {
-       
+        margin-top: 125px;
     }
 
     &__img-inner {
-        width: 1146px;
-        height: 640px;
+        width: 100%    
+    }
+
+    &__text-title {
+        position: absolute;
+        bottom: 180px;
+        left: 60px;   
+        font-size: 13px;  
+        text-transform: uppercase;  
+        color: #56ccf2;
+    }
+
+    &__text-subtitle {
+        position: absolute;
+        bottom: 120px;
+        left: 60px; 
+        max-width: 264px;
+        font-size: 20px;
+        color: white;
     }
 }
 
 .button {
+    margin-top: 50px;
     border-radius: 64px;
     border: none;
     font-size: 16px;
     width: 226px;
     height: 56px;
-}
-
-.scrollButton{
-    width: 162.64px;
-    height: 64px;
-    background-color: #FCC304;
-    color: white;
-    border-radius: 50px;
-    border: none;
-    word-spacing: 90px;
-    font-size: 24px;
 }
 
 .container {
