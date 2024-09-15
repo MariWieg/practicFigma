@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../assets/fonts/muli.css);
 body {
   font-family: "muli", Helvetica, sans-serif;
@@ -114,11 +115,19 @@ body {
   border-right: none;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
+  font-size: 26px;
 }
 .slider__button_next {
   border-right: none;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+  font-size: 26px;
+}
+.slider__button_prev::before {
+  content: "⟨";
+}
+.slider__button_next::before {
+  content: "⟩";
 }
 .slider__wrapper {
   margin-top: 125px;

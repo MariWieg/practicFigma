@@ -117,12 +117,22 @@ body {
         border-right: none;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
+        font-size: 26px;
     }
 
     &__button_next {
         border-right: none;
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
+        font-size: 26px;
+    }
+
+    &__button_prev::before {
+        content: "⟨";
+    }
+
+    &__button_next::before {
+        content: "⟩";
     }
 
     &__wrapper {
