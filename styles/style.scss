@@ -78,6 +78,11 @@ body {
     }
 }
 
+.social-media {
+    text-decoration: none;
+    color: #253757;
+}
+
 .logo {
     display: flex;
     text-decoration: none;
@@ -105,34 +110,43 @@ body {
     }
 
     &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 80px;
         height: 64px;
         background-color: #FCC304;
         color: white;
         border: none;
-        float: left;
+        float: left;      
     }
 
-    &__button_prev {
-        border-right: none;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
+    &__button_prev { 
+        border-radius: 34px 0px 0px 34px;
         font-size: 26px;
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-left: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+            transform: rotate(45deg);
+        }
     }
 
     &__button_next {
-        border-right: none;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
+        border-radius: 0px 34px 34px 0px;
         font-size: 26px;
-    }
-
-    &__button_prev::before {
-        content: "⟨";
-    }
-
-    &__button_next::before {
-        content: "⟩";
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-left: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+            transform: rotate(225deg);
+        }
     }
 
     &__wrapper {
@@ -203,10 +217,12 @@ body {
         font-size: 48px;
         text-align: center;
     }
-
+   
     &__contairer-col {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
+        display: flex;
+        gap: 150px;
+        // display: grid;
+        // grid-template-columns: 33% 33% 33%;
         
     }
 
@@ -242,6 +258,18 @@ body {
         font-size: 16px;
         color: #334563;
     }
+}
+
+.line {
+    position: relative;
+    display: block;
+    height: 10px;
+    width: 300px;
+    background-color:#FCC304;
+    border-radius: 20px;
+    transform: rotate(-50deg);
+    transform-origin: 50% 0%;
+
 }
 
 
