@@ -41,6 +41,14 @@ body {
   margin: 0;
   list-style: none;
 }
+.header__item_pos_right {
+  list-style: none;
+  margin-left: 135px;
+  color: white;
+  border-bottom-style: solid;
+  border-color: #FCC304;
+  text-decoration: none;
+}
 .header__link {
   display: block;
   color: white;
@@ -89,14 +97,6 @@ body {
   color: white;
   width: 53px;
   height: 32px;
-}
-
-.hire-us {
-  margin-left: 135px;
-  color: white;
-  border-bottom-style: solid;
-  border-color: #FCC304;
-  text-decoration: none;
 }
 
 .slider {
@@ -200,11 +200,6 @@ body {
   max-width: 742px;
   margin: 0 auto;
 }
-.section__title {
-  font-size: 16px;
-  color: #56ccf2;
-  text-transform: uppercase;
-}
 .section__subtitle {
   margin-top: 20px;
   font-size: 24px;
@@ -220,18 +215,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 150px;
+  margin-bottom: 200px;
 }
-.section__col1 {
-  float: left;
+.section__col {
   width: 264px;
-}
-.section__col2 {
-  width: 264px;
-  float: left;
-}
-.section__col3 {
-  width: 264px;
-  float: left;
 }
 .section__imgCirc {
   width: 160px;
@@ -247,6 +234,12 @@ body {
 .section__col-text-subtitle {
   font-size: 16px;
   color: #334563;
+}
+
+.title {
+  font-size: 16px;
+  color: #56ccf2;
+  text-transform: uppercase;
 }
 
 .line {

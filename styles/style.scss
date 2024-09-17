@@ -39,6 +39,15 @@ body {
         list-style: none;  
     }
 
+    &__item_pos_right {
+        list-style: none;  
+        margin-left: 135px;
+        color: white;
+        border-bottom-style: solid;
+        border-color: #FCC304;
+        text-decoration: none;
+    }
+
     &__link {
         display: block;
         color: white;
@@ -90,14 +99,6 @@ body {
     color: white;
     width: 53px;
     height: 32px;
-}
-
-.hire-us{
-    margin-left: 135px;
-    color: white;
-    border-bottom-style: solid;
-    border-color: #FCC304;
-    text-decoration: none;
 }
 
 .slider {
@@ -200,12 +201,6 @@ body {
         margin: 0 auto;
     }
 
-    &__title {
-        font-size: 16px;
-        color: #56ccf2;
-        text-transform: uppercase;
-    }
-
     &__subtitle {
         margin-top: 20px;
         font-size: 24px;
@@ -220,25 +215,12 @@ body {
    
     &__contairer-col {
         display: flex;
-        gap: 150px;
-        // display: grid;
-        // grid-template-columns: 33% 33% 33%;
-        
+        gap: 150px; 
+        margin-bottom: 200px;
     }
 
-    &__col1 {
-        float: left;
+    &__col {
         width: 264px;
-    }
-
-    &__col2 {
-        width: 264px;
-        float: left;
-    }
-
-    &__col3 {
-        width: 264px;
-        float: left;
     }
 
     &__imgCirc {
@@ -258,6 +240,12 @@ body {
         font-size: 16px;
         color: #334563;
     }
+}
+
+.title {
+    font-size: 16px;
+    color: #56ccf2;
+    text-transform: uppercase;
 }
 
 .line {
