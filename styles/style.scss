@@ -1,4 +1,5 @@
 @import url(../assets/fonts/muli.css);
+$color-white: #fff;
 
 body {
     font-family: "muli", Helvetica, sans-serif;
@@ -96,7 +97,7 @@ body {
     display: flex;
     text-decoration: none;
     font-size: 32px;
-    color: white;
+    color: $color-white;
     width: 53px;
     height: 32px;
 }
@@ -117,35 +118,37 @@ body {
         width: 80px;
         height: 64px;
         background-color: #FCC304;
-        color: white;
+        color: $color-white;
         border: none;
         float: left;      
     }
 
-    &__button_prev { 
-        border-radius: 34px 0px 0px 34px;
+    &__button_prev, &__button_next {
         font-size: 26px;
+
         &::before {
             content: "";
             display: block;
             width: 20px;
             height: 20px;
-            border-left: 2px solid #FFF;
-            border-bottom: 2px solid #FFF;
+            border-left: 2px solid $color-white;
+            border-bottom: 2px solid $color-white;
+        }
+
+    }
+
+    &__button_prev { 
+        border-radius: 34px 0px 0px 34px;
+       
+        &::before {
             transform: rotate(45deg);
         }
     }
 
     &__button_next {
         border-radius: 0px 34px 34px 0px;
-        font-size: 26px;
+
         &::before {
-            content: "";
-            display: block;
-            width: 20px;
-            height: 20px;
-            border-left: 2px solid #FFF;
-            border-bottom: 2px solid #FFF;
             transform: rotate(225deg);
         }
     }
@@ -190,9 +193,13 @@ body {
     position: relative;
     width: 1146px;
     margin: 0 auto;
+
+    &_m {
+        width: 742px;
+    }
 }
 
-.section {
+.welcome {
     max-width: 1146px;
     margin: 165px auto;
 
@@ -240,25 +247,162 @@ body {
         font-size: 16px;
         color: #334563;
     }
+
+    &__container-col-process {
+        display: flex;
+        gap: 100px; 
+        margin-bottom: 200px;
+    }
 }
 
-.title {
+.what-we-do {
+    max-width: 1146px;
+    margin: 165px auto;
+}
+
+.section-title {
+    position: relative;
+    padding-left: 37px;
     font-size: 16px;
     color: #56ccf2;
     text-transform: uppercase;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 21px;
+        height: 21px;
+        background-image: url(/assets/icons/blue-dots.svg);
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
-.line {
+.progress {
+    max-width: 1146px;
+    max-height: 618px;
+    margin: 165px auto;
+
+    &__col-text {
+        max-width: 362px;
+    }
+
+    &__title {
+        padding-top: 16px;
+        font-size: 32px;
+        color: #253757;
+    }
+
+    &__text {
+        padding-top: 64px;
+        font-size: 16px;
+        color: #334563;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 187px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 58px;
+        width: 538px;
+        list-style: none;
+    }
+
+    &__item {
+        &:nth-child(2n+1) {
+            margin-top: 111px;
+        }
+    }
+}
+
+.step {
     position: relative;
-    display: block;
-    height: 10px;
-    width: 300px;
-    background-color:#FCC304;
-    border-radius: 20px;
-    transform: rotate(-50deg);
-    transform-origin: 50% 0%;
+    width: 240px;
+    height: 256px;
+    
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        box-shadow: 2px 2px 10px lightgrey;
+        z-index: 0;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: -70px;
+        left: 0;
+        width: 422px;
+        height: 16px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px lightgrey;
+        transform: rotate(295deg) translate(-50%);
+        z-index: -1;
+    }
+
+    &_accent {
+        &_blue {
+            &::before {
+                background-color:#56CCF2;  
+            }
+        }
+
+        &_yellow {
+            &::before {
+                background-color: #FCC304;  
+            }
+        }
+
+        &_green {
+            &::before {
+                background-color: #03D542;  
+            }
+        }
+
+        &_red {
+            &::before {
+                background-color: #F25656;  
+            }
+        }
+
+    }
+
+    &_numbers {
+        padding-top: 64px;
+        font-size: 40px;
+        text-align: center;
+
+        &_blue {
+            color: #56CCF2;
+        }
+
+        &_yellow {
+            color: #FCC304;
+        }
+
+        &_green {
+            color: #03D542;
+        }
+
+        &_red {
+            color: #F25656;
+        }
+    }
+
+    &__step-text {
+        margin: 0 auto;
+        max-width: 176px;
+        font-size: 13px;
+        text-align:center;
+        color: #253757;
+    }
 
 }
-
-
-
