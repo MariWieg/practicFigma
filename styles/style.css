@@ -1,6 +1,7 @@
 @import url(../assets/fonts/muli.css);
 body {
   font-family: "muli", Helvetica, sans-serif;
+  font-weight: normal;
   width: 1642px;
   margin: 0 auto;
 }
@@ -44,27 +45,30 @@ body {
 .header__item_pos_right {
   list-style: none;
   margin-left: 135px;
-  color: white;
+  color: #fff;
   border-bottom-style: solid;
   border-color: #FCC304;
   text-decoration: none;
 }
 .header__link {
   display: block;
-  color: white;
+  color: #fff;
   font-size: 16px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 .header__title {
+  margin-bottom: 22px;
   font-size: 64px;
-  color: white;
+  font-weight: bold;
+  color: #fff;
 }
 .header__subtitle {
   max-width: 754px;
+  margin-bottom: 42px;
   font-size: 24px;
-  color: white;
+  color: #fff;
 }
 .header__social {
   position: absolute;
@@ -74,8 +78,9 @@ body {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   font-size: 13px;
-  margin-top: 580px;
-  margin-right: -120px;
+  font-weight: bold;
+  margin-top: 560px;
+  margin-right: -130px;
   list-style-type: none;
 }
 .header__social-item {
@@ -159,11 +164,11 @@ body {
 }
 .slider__text-title {
   position: absolute;
-  bottom: 180px;
+  bottom: 200px;
   left: 60px;
   font-size: 13px;
   text-transform: uppercase;
-  color: #56ccf2;
+  color: #56CCF2;
 }
 .slider__text-subtitle {
   position: absolute;
@@ -171,7 +176,7 @@ body {
   left: 60px;
   max-width: 264px;
   font-size: 20px;
-  color: white;
+  color: #fff;
 }
 
 .button {
@@ -190,12 +195,12 @@ body {
 }
 .container_m {
   width: 742px;
+  padding-top: 165px;
+}
+.container_wwd {
+  padding-top: 160px;
 }
 
-.welcome {
-  max-width: 1146px;
-  margin: 165px auto;
-}
 .welcome__text {
   max-width: 742px;
   margin: 0 auto;
@@ -207,7 +212,9 @@ body {
   color: #253757;
 }
 .welcome__maintitle {
+  margin-bottom: 136px;
   font-size: 48px;
+  font-weight: bold;
   text-align: center;
 }
 .welcome__contairer-col {
@@ -243,16 +250,11 @@ body {
   margin-bottom: 200px;
 }
 
-.what-we-do {
-  max-width: 1146px;
-  margin: 165px auto;
-}
-
 .section-title {
   position: relative;
   padding-left: 37px;
   font-size: 16px;
-  color: #56ccf2;
+  color: #56CCF2;
   text-transform: uppercase;
 }
 .section-title::before {
@@ -269,11 +271,6 @@ body {
   background-position: center;
 }
 
-.progress {
-  max-width: 1146px;
-  max-height: 618px;
-  margin: 165px auto;
-}
 .progress__col-text {
   max-width: 362px;
 }
@@ -294,6 +291,8 @@ body {
   gap: 187px;
 }
 .progress__list {
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,9 +314,10 @@ body {
   height: 256px;
 }
 .step__wrapper {
-  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
   height: 100%;
-  background-color: white;
+  background-color: #fff;
   -webkit-box-shadow: 2px 2px 10px lightgrey;
           box-shadow: 2px 2px 10px lightgrey;
   z-index: 0;
@@ -349,26 +349,26 @@ body {
 .step_accent_red::before {
   background-color: #F25656;
 }
-.step_numbers {
+.step__numbers {
   padding-top: 64px;
+  padding-bottom: 10px;
   font-size: 40px;
+  font-weight: bold;
   text-align: center;
 }
-.step_numbers_blue {
+.step__numbers_blue {
   color: #56CCF2;
 }
-.step_numbers_yellow {
+.step__numbers_yellow {
   color: #FCC304;
 }
-.step_numbers_green {
+.step__numbers_green {
   color: #03D542;
 }
-.step_numbers_red {
+.step__numbers_red {
   color: #F25656;
 }
 .step__step-text {
-  margin: 0 auto;
-  max-width: 176px;
   font-size: 13px;
   text-align: center;
   color: #253757;

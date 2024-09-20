@@ -1,8 +1,9 @@
 @import url(../assets/fonts/muli.css);
-$color-white: #fff;
+@import './variables';
 
 body {
     font-family: "muli", Helvetica, sans-serif;
+    font-weight: normal;
     width: 1642px;
     margin: 0 auto;
 }
@@ -43,15 +44,15 @@ body {
     &__item_pos_right {
         list-style: none;  
         margin-left: 135px;
-        color: white;
+        color: $color-white;
         border-bottom-style: solid;
-        border-color: #FCC304;
+        border-color: $color-yellow;
         text-decoration: none;
     }
 
     &__link {
         display: block;
-        color: white;
+        color: $color-white;
         font-size: 16px;
         text-align: center;
         padding: 14px 16px;
@@ -59,14 +60,17 @@ body {
     }
 
     &__title {
+        margin-bottom: 22px;
         font-size: 64px;
-        color: white;   
+        font-weight: bold;
+        color: $color-white;   
     }
 
     &__subtitle {
         max-width: 754px;
+        margin-bottom: 42px;
         font-size: 24px;
-        color: white;
+        color: $color-white;
     }
 
     &__social {
@@ -75,11 +79,10 @@ body {
         right: 0;
         writing-mode: vertical-lr;
         font-size: 13px;
-        margin-top: 580px;
-        margin-right: -120px;
-           
-        list-style-type: none;
-        
+        font-weight: bold;
+        margin-top: 560px;
+        margin-right: -130px;
+        list-style-type: none;    
     }
 
     &__social-item {
@@ -90,7 +93,7 @@ body {
 
 .social-media {
     text-decoration: none;
-    color: #253757;
+    color: $color-title-blue;
 }
 
 .logo {
@@ -117,7 +120,7 @@ body {
         align-items: center;
         width: 80px;
         height: 64px;
-        background-color: #FCC304;
+        background-color: $color-yellow;
         color: $color-white;
         border: none;
         float: left;      
@@ -134,7 +137,6 @@ body {
             border-left: 2px solid $color-white;
             border-bottom: 2px solid $color-white;
         }
-
     }
 
     &__button_prev { 
@@ -163,11 +165,11 @@ body {
 
     &__text-title {
         position: absolute;
-        bottom: 180px;
+        bottom: 200px;
         left: 60px;   
         font-size: 13px;  
         text-transform: uppercase;  
-        color: #56ccf2;
+        color: $color-blue;
     }
 
     &__text-subtitle {
@@ -176,7 +178,7 @@ body {
         left: 60px; 
         max-width: 264px;
         font-size: 20px;
-        color: white;
+        color: $color-white;
     }
 }
 
@@ -196,13 +198,16 @@ body {
 
     &_m {
         width: 742px;
+        padding-top: 165px;
+    }
+
+    &_wwd {
+        padding-top: 160px;
     }
 }
 
 .welcome {
-    max-width: 1146px;
-    margin: 165px auto;
-
+       
     &__text {
         max-width: 742px;
         margin: 0 auto;
@@ -212,11 +217,13 @@ body {
         margin-top: 20px;
         font-size: 24px;
         font-weight: normal;
-        color: #253757;
+        color: $color-title-blue;
     }
 
     &__maintitle {
+        margin-bottom: 136px;
         font-size: 48px;
+        font-weight: bold;
         text-align: center;
     }
    
@@ -239,13 +246,13 @@ body {
 
     &__col-text-title {
         font-size: 20px;
-        color: #253757;
+        color: $color-title-blue;
         margin-bottom: 32px;
     }
 
     &__col-text-subtitle {
         font-size: 16px;
-        color: #334563;
+        color: $color-text-blue;
     }
 
     &__container-col-process {
@@ -255,16 +262,11 @@ body {
     }
 }
 
-.what-we-do {
-    max-width: 1146px;
-    margin: 165px auto;
-}
-
 .section-title {
     position: relative;
     padding-left: 37px;
     font-size: 16px;
-    color: #56ccf2;
+    color: $color-blue;
     text-transform: uppercase;
     &::before {
         content: "";
@@ -282,10 +284,6 @@ body {
 }
 
 .progress {
-    max-width: 1146px;
-    max-height: 618px;
-    margin: 165px auto;
-
     &__col-text {
         max-width: 362px;
     }
@@ -293,13 +291,13 @@ body {
     &__title {
         padding-top: 16px;
         font-size: 32px;
-        color: #253757;
+        color: $color-title-blue;
     }
 
     &__text {
         padding-top: 64px;
         font-size: 16px;
-        color: #334563;
+        color: $color-text-blue;
     }
 
     &__wrapper {
@@ -308,6 +306,8 @@ body {
     }
 
     &__list {
+        padding: 0;
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
         column-gap: 58px;
@@ -328,9 +328,10 @@ body {
     height: 256px;
     
     &__wrapper {
-        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
         height: 100%;
-        background-color: white;
+        background-color: $color-white;
         box-shadow: 2px 2px 10px lightgrey;
         z-index: 0;
     }
@@ -351,58 +352,58 @@ body {
     &_accent {
         &_blue {
             &::before {
-                background-color:#56CCF2;  
+                background-color:$color-blue;  
             }
         }
 
         &_yellow {
             &::before {
-                background-color: #FCC304;  
+                background-color: $color-yellow;  
             }
         }
 
         &_green {
             &::before {
-                background-color: #03D542;  
+                background-color: $color-green;  
             }
         }
 
         &_red {
             &::before {
-                background-color: #F25656;  
+                background-color: $color-red;  
             }
         }
-
     }
 
-    &_numbers {
+    &__numbers {
         padding-top: 64px;
+        padding-bottom: 10px;
         font-size: 40px;
+        font-weight: bold;
         text-align: center;
 
         &_blue {
-            color: #56CCF2;
+            color: $color-blue;
         }
 
         &_yellow {
-            color: #FCC304;
+            color: $color-yellow;
         }
 
         &_green {
-            color: #03D542;
+            color: $color-green;
         }
 
         &_red {
-            color: #F25656;
+            color: $color-red;
         }
     }
 
     &__step-text {
-        margin: 0 auto;
-        max-width: 176px;
         font-size: 13px;
-        text-align:center;
-        color: #253757;
+        text-align: center;
+        color: $color-title-blue;
     }
 
 }
+
