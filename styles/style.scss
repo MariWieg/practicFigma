@@ -279,21 +279,43 @@ body {
         background-size: cover;
         background-position: center;
     }
+
+    &-f {
+        position: relative;
+        padding-left: 37px;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-top: 200px;
+        color: white;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 200px;
+            left: 0;
+            display: block;
+            width: 21px;
+            height: 21px;
+            background-image: url(/assets/icons/white-dots.svg);
+            background-repeat: none;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+.title {
+    padding-top: 16px;
+    font-size: 32px;
+    color: #253757;
 }
 
 .progress {
     max-width: 1146px;
-    max-height: 618px;
+    max-height: 518px;
     margin: 165px auto;
 
     &__col-text {
         max-width: 362px;
-    }
-
-    &__title {
-        padding-top: 16px;
-        font-size: 32px;
-        color: #253757;
     }
 
     &__text {
@@ -326,6 +348,7 @@ body {
     position: relative;
     width: 240px;
     height: 256px;
+    z-index: 2;
     
     &__wrapper {
         width: 100%;
@@ -403,6 +426,279 @@ body {
         font-size: 13px;
         text-align:center;
         color: #253757;
+    }
+
+}
+
+.features {
+    position: relative;
+    height: 976px;
+    background-color: #56CCF2;
+    z-index: 1;
+
+    &__wrapper {
+        position: relative;
+        max-width: 362px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 100px;
+        padding-top: 64px;
+        font-size: 16px;
+        color: $color-white;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 80px;
+            left: 0;
+            display: block;
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+            background-color: white;
+            background-image: url(/assets/icons/announcement-speaker.svg);
+            background-repeat: no-repeat;
+            background-size: 24px;
+            background-position: center;
+        }
+    }
+
+    &__images {
+        position: absolute;
+        top: 0px;
+        left: 345px;
+    }
+
+    &__first-img {
+        
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -230px;
+        left: 1340px;
+        width: 1600px;
+        height: 730px;
+        border-radius: 500px;
+        background-color: #03D542;
+        //box-shadow: 2px 2px 5px lightgrey;
+        transform: rotate(295deg) translate(-50%);
+        z-index: -1;
+    }   
+}
+
+.testimonials {
+    max-width: 1146px;
+    max-height: 518px;
+    margin: 165px auto;
+
+    &__col-text {
+        max-width: 362px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 187px;
+    }
+
+    &__contairer-col {
+        padding-top: 86px;
+        display: flex;
+        gap: 150px; 
+        margin-bottom: 200px;
+    }
+
+    &__col {
+        width: 264px;
+    }
+
+    &__imgCirc {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        margin-bottom: 64px;
+    }
+
+    &__col-text-subtitle {
+        font-size: 16px;
+        color: #334563;
+    }
+}
+
+
+
+.part {
+    position: relative;
+    width: 314px;
+    height: 464px;
+    z-index: 2;
+    
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        box-shadow: 2px 2px 10px lightgrey;
+        z-index: 0;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 120px;
+        width: 162px;
+        height: 64px;
+        border-radius: 32px;
+        box-shadow: 2px 2px 5px lightgrey;
+        transform: rotate(295deg) translate(-50%);
+        z-index: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 180px;
+        left: 120px;
+        width: 123px;
+        height: 64px;
+        border-radius: 32px;
+        background: url(/assets/images/boy.png) no-repeat center center;
+        //background-repeat: no-repeat;
+       // background-size: 100%;
+        background-position: cover;
+        
+        box-shadow: 2px 2px 5px lightgrey;
+        transform: rotate(65deg) translate(-50%);
+        z-index: 0;
+    }
+
+    &_accent {
+        &_blue {
+            &::before {
+                background-color:#56CCF2;  
+            }
+        }
+
+        &_yellow {
+            &::before {
+                background-color: #FCC304;  
+            }
+        }
+
+        &_red {
+            &::before {
+                background-color: #F25656;  
+            }
+        }
+
+    }
+
+    &__name-text {
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    &__part-text {
+        margin: 0 auto;
+        padding-top: 240px;
+        max-width: 250px;
+        font-size: 14px;
+        text-align:center;
+        color: #253757;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 300px;
+            left: 145px;
+            width: 2px;
+            height: 64px;
+            border-radius: 32px;
+            transform: rotate(90deg) translate(-50%);
+            z-index: 0;
+        }
+
+        &_blue {
+            &::before {
+                background-color:#56CCF2;  
+            }
+        }
+
+        &_yellow {
+            &::before {
+                background-color: #FCC304;  
+            }
+        }
+
+        &_red {
+            &::before {
+                background-color: #F25656;  
+            }
+        }
+    }
+
+    &__part-ceo {
+        font-size: 13px;
+        text-align:center;
+        color: #253757;
+
+        &_blue {
+            color:#56CCF2;  
+        }
+
+        &_yellow {
+            color: #FCC304;  
+        }
+
+        &_red {
+            color: #F25656;  
+        }
+    }
+
+}
+
+.vision-passion-results {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    text-align: center;
+
+    &__text {
+        margin: 0 auto;
+        max-width: 754px;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    &__button {
+        margin-top: 55px;
+        width: 226px;
+        height: 56px;
+        border-radius: 28px;
+        border: none;
+        background-color: #56CCF2;
+        font-size: 16px;
+        color: white;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 120px;
+        width: 162px;
+        height: 64px;
+        background-color:#ffffff;
+        border-radius: 32px;
+        border: 2px solid #03D542;
+        transform: rotate(295deg) translate(-50%);
+        z-index: 0;
     }
 
 }
