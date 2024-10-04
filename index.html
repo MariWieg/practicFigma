@@ -4,68 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="mystyle.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="./styles/normalize.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    
 </head>
 <body>
-    <header>
-        <div class="blue">
-            
-                <div class="navbar" >
-                    <ul>
-                        <li style="margin-right: 150px;"><a class="logo" href="https://www.google.com"/>DIA</a></li>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contactUs">Contact us</a></li>
-                        <li style="float: inline-end; margin-right: 450px; text-decoration-line: underline;
-                        text-decoration-color: yellow; text-decoration-thickness: 5px; "><a href="#hiretUs">Hire us</a></li>
-                    </ul>
-                </div>
-                <div class="textconteiter">
-                    <h1 class="Header1">Global digital agency</h1>
-                    <p class="text1">By the same illusion which lifts the horizon of <br> the sea to the level of the spectator on a hillside, the sable cloud beneath.</p>
-                    <button>Learn more</button>
-                </div>
-                <div class="a" style="height: 500px;">    
-                    <img src="805b0cc475f1da7929d229efa667c335.jpg" class="imgHeader">
-                    <p style="writing-mode: vertical-lr; position: absolute; bottom: -100px; left: 1240px; word-spacing: 50px;">Facebook Twitter Instagram</p>
-                </div>
-
-        </div>
-       
-
-    </header>
-    <section class="section1">
-        <div class="welcome">
-            <i class="material-icons" style="color: #56CCF2;">apps</i>
-            <h2>WELCOME</h2>
-        </div>
-        <div style="width: 550px; padding-left: 400px; text-align: justify;">
-            <p class="text2">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
-        </div>
-    </section>
-    <section class="section2">
-        <div style="text-align: center;">
-            <h1>What we do</h1>
-        </div>
-        <div class="conteinerS2">
-            <div class="colS2">
-                <img src="/1.jpg" alt="" class="image">
-                <h3>By the same illusion which lifts the horizon.</h3>
-                <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <a class="logo" href="#"/>DIA</a>
+                <ul class="header__list">
+                    <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">About us</a></li>
+                    <li class="header__item"><a href="#services" class="header__link">Services</a></li>
+                    <li class="header__item"><a href="#work" class="header__link">Work</a></li>
+                    <li class="header__item"><a href="#contactUs" class="header__link">Contact us</a></li>
+                    <li class="header__item_pos_right"><a href="#hireUs" class="header__link">Hire us</a></li>
+                </ul>
+                
             </div>
-            <div class="colS2"> 
-                <img src="/2.jpg" alt="" class="image">
-                <h3>By the same illusion which lifts the horizon.</h3>
-                <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p></div>
-            <div class="colS2"> 
-                <img src="/3.jpg" alt="" class="image">
-                <h3>By the same illusion which lifts the horizon.</h3>
-                <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p></div>
-        </div>
-        
+            <div class="header__container">
+                <h1 class="header__title">Global digital agency</h1>
+                <p class="header__subtitle">By&nbsp;the same illusion which lifts the horizon of&nbsp;the sea to&nbsp;the level of&nbsp;the spectator on&nbsp;a&nbsp;hillside, the sable cloud beneath.</p>
+                <button class="button">Learn more</button>
+            </div>
+            <div class="slider">
+                <div class="slider__buttons">
+                    <button class="slider__button slider__button_prev"></button>
+                    <button class="slider__button slider__button_next"></button>
+                </div>
+                <div class="slider__wrapper">
+                    <img src="/assets/images/first_img.jpg" class="slider__img-inner">
+                </div>
+                <div class="slider__text">
+                    <h5 class="slider__text-title">INtro</h5>
+                    <p class="slider__text-subtitle">By the same illusion which lifts the horizon.</p>
+                </div>
+            </div>
+            <ul class="header__social">
+                <li class="header__social-item"><a href="https://www.facebook.com/" class="social-media">Facebook</a></li>
+                <li class="header__social-item"><a href="https://www.x.com/" class="social-media">Twitter</a></li>
+                <li class="header__social-item"><a href="https://www.instagram.com/" class="social-media">Instagram</a></li>
+            </ul>    
+        </div>  
+    </header>
+    <section class="welcome">
+        <div class="container container_m">
+            <h2 class="section-title">
+                welcome
+            </h2>
+            <p class="welcome__text welcome__subtitle">
+                By&nbsp;the same illusion which lifts the horizon of&nbsp;the sea to&nbsp;the level of&nbsp;the spectator on&nbsp;a&nbsp;hillside, the sable cloud beneath was dished out, and the car seemed to&nbsp;float in&nbsp;the middle of&nbsp;an&nbsp;immense dark sphere, whose upper half was strewn with silver.
+            </p>
+        </div>    
     </section>
+    <section class="what-we-do">
+        <div class="container">
+            <h3 class="what-we-do__title">
+                What we do
+            </h3>
+            <div class="what-we-do__contairer-col">
+                <div class="what-we-do__col">
+                    <img src="/assets/images/1.jpg" alt="room" class="what-we-do__img-circ">
+                    <h4 class="what-we-do__col-text-title">By the same illusion which lifts the horizon.</h4>
+                    <p class="what-we-do__col-text-subtitle">By&nbsp;the same illusion which lifts the horizon of&nbsp;the sea to&nbsp;the level of&nbsp;the spectator on&nbsp;a&nbsp;hillside.</p>
+                </div>
+                <div class="what-we-do__col">
+                    <img src="/assets/images/2.jpg" alt="laptop on the table" class="what-we-do__img-circ">
+                    <h4 class="what-we-do__col-text-title">By the same illusion which lifts the horizon.</h4>
+                    <p class="what-we-do__col-text-subtitle">By&nbsp;the same illusion which lifts the horizon of&nbsp;the sea to&nbsp;the level of&nbsp;the spectator on&nbsp;a&nbsp;hillside.</p>
+                </div>
+                <div class="what-we-do__col">
+                    <img src="/assets/images/3.jpg" alt="work place" class="what-we-do__img-circ">
+                    <h4 class="what-we-do__col-text-title">By the same illusion which lifts the horizon.</h4>
+                    <p class="what-we-do__col-text-subtitle">By&nbsp;the same illusion which lifts the horizon of&nbsp;the sea to&nbsp;the level of&nbsp;the spectator on&nbsp;a&nbsp;hillside.</p>
+                </div>
+            </div> 
+        </div> 
+    </section>
+    <section class="progress">
+        <div class="container">
+            <div class="progress__wrapper">
+                <div class="progress__col-text">
+                    <h2 class="section-title">
+                        process
+                    </h2>
+                    <h3 class="progress__title">
+                        By the same illusion which lifts the horizon.
+                    </h3>  
+                    <p class="progress__text">
+                        By&nbsp;the same illusion which lifts the horizon of&nbsp;the sea to&nbsp;the level of&nbsp;the spectator on&nbsp;a&nbsp;hillside, 
+                    </p> 
+                    <p class="progress__text">
+                        the sable cloud beneath was dished out, and the car seemed to&nbsp;float in&nbsp;the middle of&nbsp;an&nbsp;immense dark sphere, whose upper half was strewn with silver.
+                    </p>   
+                </div>
+                <ul class="progress__list">
+                    <li class="progress__item">
+                        <article class="step step_accent_blue">
+                            <div class="step__wrapper">
+                                <p class="step__numbers step__numbers_blue">
+                                1
+                                </p>
+                                <p class="step__step-text">
+                                    By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="progress__item">
+                        <article class="step step_accent_yellow">
+                            <div class="step__wrapper">
+                                <p class="step__numbers step__numbers_yellow">
+                                    2
+                                </p>
+                                <p class="step__step-text">
+                                    By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="progress__item">
+                        <article class="step step_accent_green">
+                            <div class="step__wrapper">
+                                <p class="step__numbers step__numbers_green">
+                                    3
+                                </p>
+                                <p class="step__step-text">
+                                    By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="progress__item">
+                        <article class="step step_accent_red">
+                            <div class="step__wrapper">
+                                <p class="step__numbers step__numbers_red">
+                                    4
+                                </p>
+                                <p class="step__step-text">
+                                    By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 </html>
