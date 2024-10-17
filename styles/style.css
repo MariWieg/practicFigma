@@ -4,6 +4,7 @@ body {
   font-weight: normal;
   width: 1642px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .header {
@@ -305,10 +306,8 @@ body {
   color: #253757;
 }
 
-.progress {
-  max-width: 1146px;
-  max-height: 518px;
-  margin: 165px auto;
+.progress_negative-mt {
+  margin: 165px auto -160px;
 }
 .progress__col-text {
   max-width: 362px;
@@ -458,7 +457,6 @@ body {
 }
 .features__list {
   list-style: none;
-  padding: 0;
 }
 .features__item {
   position: relative;
@@ -470,14 +468,17 @@ body {
 .features__item::before {
   content: "";
   position: absolute;
-  top: 80px;
+  top: 70%;
   left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: block;
   width: 64px;
   height: 64px;
   border-radius: 32px;
   background-color: white;
-  background-image: url(/assets/icons/announcement-speaker.svg);
+  background-image: url("../assets/icons/announcement-speaker.svg");
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: center;
@@ -503,18 +504,11 @@ body {
 }
 
 .testimonials {
-  max-width: 1146px;
+  padding-top: 165px;
   max-height: 518px;
-  margin: 165px auto;
-}
-.testimonials__col-text {
-  max-width: 362px;
 }
 .testimonials__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 187px;
+  max-width: 362px;
 }
 .testimonials__contairer-col {
   padding-top: 86px;
@@ -678,26 +672,26 @@ body {
   z-index: 0;
 }
 
-.contact-us__wrapper {
+.footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 128px;
 }
-.contact-us__col-send-message {
+.footer__col-send-message {
   width: 656px;
 }
-.contact-us__col-contact-us {
+.footer__col-contact-us {
   max-width: 362px;
 }
-.contact-us__col-contact-us-smedia {
+.footer__col-contact-us-smedia {
   margin: 0 auto;
 }
-.contact-us__form {
+.footer__form {
   padding-top: 104px;
   color: #152032;
 }
-.contact-us__form .form_input {
+.footer__form .form__input {
   margin-bottom: 48px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -705,21 +699,21 @@ body {
   border: none;
   border-bottom: 2px solid #E1E1E1;
 }
-.contact-us__black-text {
+.footer__black-text {
   padding-top: 43px;
   font-size: 13px;
   color: #334563;
 }
-.contact-us__blue-text {
+.footer__blue-text {
   max-width: 257px;
   font-size: 24px;
   color: #56CCF2;
 }
-.contact-us__col-contact-us-smedia {
+.footer__col-contact-us-smedia {
   padding-top: 50px;
 }
 
-input[type=submit] {
+.form-button {
   margin-top: 65px;
   width: 226px;
   height: 56px;
