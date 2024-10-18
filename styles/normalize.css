@@ -348,6 +348,7 @@ template {
   display: none;
 }
 
-list {
+ul {
   margin: 0;
+  padding: 0;
 }
