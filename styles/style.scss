@@ -589,7 +589,7 @@ body {
     &::before {
         content: "";
         position: absolute;
-        top: 0px;
+        top: 8px;
         left: 120px;
         width: 162px;
         height: 64px;
@@ -642,7 +642,7 @@ body {
     &__text {
         position: relative;
         margin: 0 auto;
-        padding-top: 240px;
+        padding-top: 208px;
         font-size: 14px;
         text-align:center;
         line-height: 22px;
@@ -700,8 +700,18 @@ body {
 
     &__img {
         position: absolute;
-        width: 220px; 
-        background: url('../assets/images/boy3.jpeg')
+        top: 103px;
+        left: 50%;
+        height: 130px;
+        background-image: url("../assets/images/boy3.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-mask-image: url("../assets/icons/masks/part-mask.svg");
+        -webkit-mask-size: 88px 118px;
+        -webkit-mask-position: 50% 3px;
+        -webkit-mask-repeat: no-repeat;
+        transform: translateX(-50%);
     }
 
     &__container {
