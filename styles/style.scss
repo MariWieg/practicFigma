@@ -4,7 +4,7 @@
 body {
     font-family: "muli", Helvetica, sans-serif;
     font-weight: normal;
-    width: 1642px;
+    width: 1600px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -21,7 +21,7 @@ body {
     }
 
     &__container {
-        margin: 70px 98px 80px;
+        margin: 78px 98px 80px;
     }
 
     &__container-img {
@@ -34,7 +34,7 @@ body {
 
     &__list {
         display: flex;
-        gap: 63px;  
+        gap: 33px;  
     }
 
     &__item {
@@ -44,7 +44,7 @@ body {
 
     &__item_pos_right {
         list-style: none;  
-        margin-left: 135px;
+        margin-left: 72px;
         color: $color-white;
         border-bottom-style: solid;
         border-color: $color-yellow;
@@ -56,12 +56,13 @@ body {
         color: $color-white;
         font-size: 16px;
         text-align: center;
+        line-height: 24px;
         padding: 14px 16px;
         text-decoration: none;
     }
 
     &__title {
-        margin-bottom: 22px;
+        margin-bottom: 32px;
         font-size: 64px;
         font-weight: bold;
         color: $color-white;   
@@ -69,8 +70,8 @@ body {
 
     &__subtitle {
         max-width: 754px;
-        margin-bottom: 42px;
         font-size: 24px;
+        line-height: 36px;
         color: $color-white;
     }
 
@@ -79,16 +80,18 @@ body {
         top: 0;
         right: 0;
         writing-mode: vertical-lr;
+        text-transform: uppercase;
         font-size: 13px;
+        line-height: 19px;
         font-weight: bold;
-        margin-top: 560px;
-        margin-right: -130px;
+        margin-top: 550px;
+        margin-right: -135px;
         list-style-type: none;    
     }
 
     &__social-item {
         float: left;
-        padding: 65px; 
+        padding: 50px; 
         cursor: pointer;
         
         &::hover {
@@ -103,7 +106,9 @@ body {
 }
 
 .logo {
+    padding-right: 130px;
     display: flex;
+    align-items: flex-end;
     text-decoration: none;
     font-size: 32px;
     color: $color-white;
@@ -116,7 +121,7 @@ body {
 
     &__buttons {
         position: absolute;
-        margin-top: 260px;
+        margin-top: 285px;
         margin-left: -80px;
     }
 
@@ -167,7 +172,7 @@ body {
     }
 
     &__wrapper {
-        margin-top: 125px;
+       // margin-top: 125px;
     }
 
     &__img-inner {
@@ -176,28 +181,31 @@ body {
 
     &__text-title {
         position: absolute;
-        bottom: 200px;
-        left: 60px;   
-        font-size: 13px;  
+        bottom: 150px;
+        left: 100px;   
+        font-size: 13px; 
+        line-height: 19px; 
         text-transform: uppercase;  
         color: $color-blue;
     }
 
     &__text-subtitle {
         position: absolute;
-        bottom: 120px;
-        left: 60px; 
+        bottom: 95px;
+        left: 100px; 
         max-width: 264px;
         font-size: 20px;
+        line-height: 27px;
         color: $color-white;
     }
 }
 
 .button {
-    margin-top: 50px;
+    margin-top: 45px;
     border-radius: 64px;
     border: none;
     font-size: 16px;
+    line-height: 24px;
     width: 226px;
     height: 56px;
 }
@@ -209,7 +217,7 @@ body {
 
     &_m {
         width: 742px;
-        padding-top: 165px;
+        padding-top: 160px;
     }
 
     &_l {
@@ -226,6 +234,7 @@ body {
     &__subtitle {
         margin-top: 20px;
         font-size: 24px;
+        line-height: 36px;
         font-weight: normal;
         color: $color-title-blue;
     }
@@ -234,7 +243,7 @@ body {
 .what-we-do {
     &__title {
         margin-bottom: 136px;
-        padding-top: 160px;
+        padding-top: 130px;
         font-size: 48px;
         font-weight: bold;
         text-align: center;
@@ -242,7 +251,7 @@ body {
    
     &__contairer-col {
         display: flex;
-        gap: 150px; 
+        gap: 130px; 
         margin-bottom: 200px;
     }
 
@@ -265,6 +274,7 @@ body {
 
     &__col-text-subtitle {
         font-size: 16px;
+        line-height: 24px;
         color: $color-text-blue;
     }
 
@@ -279,6 +289,7 @@ body {
     position: relative;
     padding-left: 37px;
     font-size: 16px;
+    line-height: 24px;
     color: $color-blue;
     text-transform: uppercase;
     &::before {
@@ -297,7 +308,7 @@ body {
 
     &_color {
         &_white {    
-            color: white;
+            color: $color-white;
 
             &::before {          
                 background-image: url('../assets/icons/white-dots.svg');
@@ -307,23 +318,26 @@ body {
 }
 
 .title {
-    padding-top: 16px;
+    padding-top: 20px;
     font-size: 32px;
+    line-height: 45px;
     color: #253757;
 }
 
 .progress { 
     &_negative-mt {
-        margin: 165px 0 -160px;
+        margin: 382px 0 -160px;
     }
 
     &__col-text {
+        margin-top: -55px;
         max-width: 362px;
     }
 
     &__title {
         padding-top: 16px;
         font-size: 32px;
+        line-height: 45px;
         color: $color-title-blue;
     }
 
@@ -331,6 +345,7 @@ body {
         margin: 0;
         padding-top: 64px;
         font-size: 16px;
+        line-height: 24px;
         color: $color-text-blue;
 
         &:last-child {
@@ -356,7 +371,7 @@ body {
 
     &__item {
         &:nth-child(2n+1) {
-            margin-top: 111px;
+            margin-top: 118px;
         }
     }
 }
@@ -480,6 +495,7 @@ body {
 
 .features {
     position: relative;
+    margin-top: 6px;
     height: 976px;
     background-color: $color-blue;
     z-index: 1;
@@ -494,16 +510,17 @@ body {
         display: flex;
         flex-direction: column;
         row-gap: 64px;
-        padding-top: 53px;
+        padding-top: 65px;
         list-style: none;
     }
 
     &__item {
         position: relative;
-        padding-left: 100px;
+        padding-left: 90px;
         font-size: 16px;
+        line-height: 24px;
         color: $color-white;
-        
+
         &::before {
             content: "";
             position: absolute;
@@ -515,30 +532,47 @@ body {
             height: 64px;
             border-radius: 32px;
             background-color: $color-white;
-            background-image: url('../assets/icons/announcement-speaker.svg');
             background-repeat: no-repeat;
             background-size: 24px;
             background-position: center;
+        }
+
+        &_1 {
+            &::before {
+                background-image: url('../assets/icons/announcement-speaker.svg');
+            }
+        }
+
+        &_2 {
+            &::before {    
+                background-image: url('../assets/icons/calendar.svg');
+            }
+        }
+        
+        &_3 {
+            &::before {
+                background-image: url('../assets/icons/file-text.svg');
+            }
         }
     }
 
     &__images {
         position: absolute;
         top: 0px;
-        left: 345px;
+        left: 330px;
     }
 
     &::before {
         content: "";
         position: absolute;
-        top: -230px;
-        left: 1340px;
+        top: -275px;
+        left: 1294px;
         width: 1600px;
         height: 730px;
         border-radius: 500px;
         background-color: $color-green;
         transform: rotate(295deg) translate(-50%);
-        z-index: -1;
+        z-index: 1;
     }   
 }
 
@@ -553,7 +587,7 @@ body {
         padding-top: 86px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 200px;
+        margin: 0 25px 200px;
     }
 
     &__col {
@@ -589,8 +623,8 @@ body {
     &::before {
         content: "";
         position: absolute;
-        top: 8px;
-        left: 120px;
+        top: 15px;
+        left: 107px;
         width: 162px;
         height: 64px;
         border-radius: 32px;
@@ -622,6 +656,8 @@ body {
     &__name-text {
         padding-top: 60px;
         text-align: center;
+        font-size: 13px;
+        line-height: 19px;
     }
 
     &__text {
@@ -630,7 +666,7 @@ body {
         padding-top: 208px;
         font-size: 14px;
         text-align:center;
-        line-height: 22px;
+        line-height: 21px;
         color: $color-title-blue;
 
         &::before {
@@ -688,10 +724,6 @@ body {
         top: 103px;
         left: 50%;
         height: 130px;
-        //background-image: url("../assets/images/boy3.jpeg");
-        //background-position: center;
-        //background-repeat: no-repeat;
-        //background-size: cover;
         -webkit-mask-image: url("../assets/icons/masks/part-mask.svg");
         -webkit-mask-size: 88px 118px;
         -webkit-mask-position: 50% 3px;
@@ -718,13 +750,19 @@ body {
 }
 
 .vision-passion-results {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    margin-top: -40px;
+    padding-bottom: 70px;
     text-align: center;
+
+    &__maintitle {
+        font-size: 48px;
+        line-height: 48px;
+    }
 
     &__text {
         padding-top: 57px;
         font-size: 24px;
+        line-height: 36px;
         font-weight: normal;
     }
 
@@ -783,7 +821,7 @@ body {
 
 .footer {
     &__wrapper {
-        padding-top: 200px;
+        padding-top: 185px;
         display: flex;
         gap: 128px;   
     }
@@ -803,12 +841,17 @@ body {
     &__black-text {
         padding-top: 43px;
         font-size: 13px;
+        line-height: 19px;
         color: $color-text-blue;
+        text-transform: uppercase;
     }
 
     &__blue-text {
         max-width: 257px;
         font-size: 24px;
+        line-height: 36px;
+        text-transform: uppercase;
+        font-weight: bold;
         color: $color-blue;    
     }
 
@@ -848,17 +891,18 @@ body {
 
 .footer {
     &__nav {
-        padding-top: 136px;
+        padding-top: 116px;
         display: flex;
         align-items: center;
         font-size: 16px;
+        line-height: 24px;
         color: $color-title-blue;
     }
 
     &__list {
-        margin-left: 160px;
+        margin-left: 370px;
         display: flex;
-        gap: 63px;
+        gap: 30px;
         list-style: none;
     }
 
